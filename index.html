@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume</title>
+    <meta charset="UTF-8">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <div class="container-fluid header">
+        <div class="page-header">
+            <h1>Shams Ali <small>Web Developer</small></h1>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1 info">
+                <h5>mobile <label>7734016076</label></h5>
+            </div>
+            <div class="col-md-2 info">
+                <h5>email <label>shams@gmail.com</label></h5>
+            </div>
+            <div class="col-md-2 info">
+                <h5>github <label>shams_arrow</label></h5>
+            </div>
+            <div class="col-md-2 info">
+                <h5>twitter <label>@shamsarrow</label></h5>
+            </div>
+            <div class="col-md-2 info">
+                <h5>location <label>Jaipur</label></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="assets/shams.jpg" style="width: 100%;">
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <p><i>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</i></p>
+                </div>
+                <div class="row skill">
+                    <h3><i>Skills at a Glance:</i></h3>
+                </div>
+                <div class="row">
+                    <ul>
+                        <li><label>awesomness</label></li>
+                        <li><label>delivering things</label></li>
+                        <li><label>cryogenic sleep</label></li>
+                        <li><label>saving the universe</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid work">
+        <div class="row">
+            <h2>Work Experience</h2>
+        </div>
+        <div class="row">
+            <div class="row">
+                <a href="#">Planet Express</a>
+            </div>
+            <div class="row">
+                <div class="pull-left">
+                    <h6><i>Jan 2012- Future</i></h6>
+                </div>
+                <div class="pull-right">
+                    <h6><i>New Delhi, INDIA</i></h6>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat justo ut elit pharetra, scelerisque ullamcorper mi venenatis. Suspendisse pulvinar, dolor nec laoreet pellentesque, lorem est pellentesque est, eu varius est erat at tellus. Interdum
+                    et malesuada fames ac ante ipsum primis in faucibus.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid project">
+        <div class="row">
+            <h2>Projects</h2>
+        </div>
+        <div class="row">
+            <div class="row">
+                <a href="#">Sample Project 1</a>
+            </div>
+            <div class="row">
+                <h6><i>2015</i></h6>
+            </div>
+            <div class="row">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat justo ut elit pharetra, scelerisque ullamcorper mi venenatis. Suspendisse pulvinar, dolor nec laoreet pellentesque, lorem est pellentesque est, eu varius est erat at tellus. Interdum
+                    et malesuada fames ac ante ipsum primis in faucibus.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid education">
+        <div class="row">
+            <h2>Education</h2>
+        </div>
+        <div class="row">
+            <div class="row">
+                <a href="#">IIIT KOTA</a>
+            </div>
+            <div class="row">
+                <div class="pull-left">
+                    <h6><i>2015</i></h6>
+                </div>
+                <div class="pull-right">
+                    <h6><i>Jaipur</i></h6>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    <i>Major: CSE</i>
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:1em;">
+            <b><i>Online Classes<i></b>
+        </div>
+        <div class="row">
+            <a href="#">JavaScript Crash Course-Coursera</a>
+        </div>
+        <div class="row">
+            <h6><i>2015</i></h6>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid map">
+        <div class="row">
+            <h2>Where I've Lived and Worked</h2>
+        </div>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var myLatLng = {
+                    lat: 26.363,
+                    lng: 75.044,
+                };
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 3,
+                    center: myLatLng
+                });
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Jaipur'
+                });
+
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIG8smqjcPmVNUM9GOx5YcI1ObUavVP1c&callback=initMap">
+        </script>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row connect">
+            <h2>Let's Connect</h2>
+        </div>
+        <div class="row contacts">
+            <div class="col-md-2 col-md-offset-1 info">
+                <h5>mobile <label>7734016076</label></h5>
+            </div>
+            <div class="col-md-2 info">
+                <h5>email <label>shams@gmail.com</label></h5>
+            </div>
+            <div class="col-md-2 info">
+                <h5>github <label>shams_arrow</label></h5>
+            </div>
+            <div class="col-md-2 info">
+                <h5>twitter <label>@shamsarrow</label></h5>
+            </div>
+            <div class="col-md-2 info">
+                <h5>location <label>Jaipur</label></h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
